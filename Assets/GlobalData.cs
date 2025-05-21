@@ -3,7 +3,7 @@ using UnityEngine;
 public class GlobalData : MonoBehaviour
 {
 
-    public static GlobalData Instance;
+    public static GlobalData Instance { get; private set; }
     public Color color; // = new Color(0,0,0,1);
 
     private void Awake()
